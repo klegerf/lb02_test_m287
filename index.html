@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>M289 - Made with ♥</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script>
+    function openNav() { document.getElementById("hamburgerNav").style.width = "100%"; }
+    function closeNav() { document.getElementById("hamburgerNav").style.width = "0%"; }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="logo-nav">
+      <ul>
+        <li><a class="logo" href="index.html"> ⚛ </a></li>
+      </ul>
+    </nav>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="firma.html">Firma</a>
+          <ul>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+    <!--  &#9776; stellt das ☰ Icon dar dar und wird via Media-Screen im CSS ein-&ausgeblendet -->
+  </header>
+
+  <main class="home-temp">
+    <h1><b>Lorem ipsum</b> dolor sit amet, </h1>
+    <p>
+      consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+      sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    </p>
+    <button class="button"><a href="kontakt.html">Klick mich</a></button>
+  </main>
+
+
+  <footer>
+    <a href="">EN</a>
+    <form role="search" method="get" id="searchform" action="">
+      <input type="search" placeholder="Search" name="search" />
+      <button type="submit" class="btn"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+    </form>
+  </footer>
+
+  <nav id="hamburgerNav">
+    <!-- Die Hamburger Nav wird mittels script.js geöffnet oder geschlossen -->
+    <a class="closebtn" onclick="closeNav()" href="#">&times;</a> <!--  &times; stellt das X Icon dar -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="firma.html">Firma</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+</body>
+
+</html>
